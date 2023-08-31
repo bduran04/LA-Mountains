@@ -11,17 +11,22 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar container navbar-expand-lg bg-transparent">
-            <div class="row">
-                <a class="col navbar-brand" href="index.html">
+    <!--Hero-->
+    <header id="hero">
+        <nav class="navbar navbar-expand-sm justify-content-end navbar-light bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <a class="fa-brands" aria-hidden="true" href="#hero">
                     <img src="images/logo.png" alt="LA mountains logo">
                 </a>
             </div>
-            <div class="row collapse navbar-collapse" id="navbarNav">
-                <ul class=" col navbar-nav">
+            <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarTogglerDemo03">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="history.html">01. HISTORY</a>
+                        <a class="nav-link active" aria-current="page" href="#history">01. HISTORY</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="team.html">02. TEAM</a>
@@ -29,8 +34,52 @@
                 </ul>
             </div>
         </nav>
-
     </header>
+
+    <!--History-->
+    <div id="history" class="history-background">
+        <nav class="navbar navbar-expand-sm justify-content-end navbar-light bg-white">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo">
+                <a class="fa-brands" aria-hidden="true" href="#hero">
+                    <img src="images/logo2.png" alt="LA mountains logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarTogglerDemo03">
+                <ul class="links navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#history">01. HISTORY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#team">02. TEAM</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="history-number">
+            <a>
+                <img src="images/history_image.png">
+            </a>
+        </div>
+        <div class="history-text">
+            <div class="text-start badge bg-transparent text-wrap fw-light text-secondary fs-4" style="width: 60rem;">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas labore suscipit impedit quisquam
+                laborum quis assumenda dolores nam commodi recusandae, sequi ex nostrum maiores quas magni consectetur
+                accusantium veritatis omnis?
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <a>
+            <img src="images/nav_border.png" alt="carousel border">
+        </a>
+    </div>
+
+    <!--Team-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
