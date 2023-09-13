@@ -36,7 +36,6 @@ let imageIndex = 0;
 let alternatingCount = 0;
 
 function alternateImages() {
-    console.log("here")
     if (alternatingCount < 12) {
         const newImg = document.createElement("img");
         const newClass = document.createElement("class")
@@ -50,7 +49,7 @@ function alternateImages() {
         alternatingCount++;
         
         // Call the function again after a delay (e.g., 1 second)
-        setTimeout(alternateImages, 1000); // 1000 milliseconds = 1 second
+        setTimeout(alternateImages); // 1000 milliseconds = 1 second
     }
 }
 
