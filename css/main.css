@@ -29,13 +29,13 @@ header {
 
 .nav-item {
     color: white;
-    
+    padding-left: 20%;
+
 }
 
 .nav-items {
     display: flex;
     flex-direction: row;
-    margin-right: 20%;
 }
 
 .wrapper {
@@ -61,7 +61,7 @@ header {
 .history-number {
     margin-left: 20%;
     position: relative;
-    padding-top: 5%
+    padding-top: 5%;
 }
 
 @media (max-width: 600px) {
@@ -81,6 +81,25 @@ header {
     align-items: center;
     justify-content: center;
     margin-left: 20%;
+}
+
+.climb-section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 16px;
+}
+
+.climb-text {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.climb-number {
+    margin-left: 20%;
+    position: relative;
+    padding-top: 5%;
 }
 
 .carousel-div {
@@ -148,4 +167,13 @@ header {
     /* background: url("../images/nav_image_01.png") no-repeat; */
     width: 250px;
     height: 180px;
+}
+
+.mountain-btn-section {
+    background-color: #37435B;
+    padding: 16px;
+}
+
+button {
+    padding: 16px;
 }
