@@ -7,25 +7,6 @@ const carousel = document.getElementById("carousel"),
   next = document.getElementById("next"),
   prev = document.getElementById("prev");
 
-// next.addEventListener("click", e => {
-//   carousel.scrollBy(width + gap, 0);
-//   if (carousel.scrollWidth !== 0) {
-//     prev.style.display = "flex";
-//   }
-//   if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-//     next.style.display = "none";
-//   }
-// });
-// prev.addEventListener("click", e => {
-//   carousel.scrollBy(-(width + gap), 0);
-//   if (carousel.scrollLeft - width - gap <= 0) {
-//     prev.style.display = "none";
-//   }
-//   if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-//     next.style.display = "flex";
-//   }
-// });
-
 let width = carousel.offsetWidth;
 window.addEventListener("resize", e => (width = carousel.offsetWidth));
 
@@ -55,3 +36,19 @@ function alternateImages() {
 
 // Start alternating images
 alternateImages();
+
+const image = document.getElementById('image');
+const toggleButton = document.getElementById('toggleButton');
+
+// Define an array with the image sources
+const imageSources = ['image1.jpg', 'image2.jpg'];
+
+// Initialize a variable to keep track of the currently displayed image
+let currentImageIndex = 0;
+
+// Add a click event listener to the button
+toggleButton.addEventListener('click', function() {
+  // Toggle between the two images
+  currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+  image.src = imageSources[currentImageIndex];
+});
