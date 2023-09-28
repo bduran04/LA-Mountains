@@ -3,37 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA Mountains</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+    <title>Los Angeles Mountains</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
 
 <body>
-    <!--Hero-->
-    <!--nav bar items need width 80%; margin: 0 20%; justify content: space-between-->
-    <header id="hero">
-        <div class="navbar-all">
-            <div class="logo">
-                <a>
-                    <img src="images/logo.png" alt="LA Mountains Logo">
-                </a>
-            </div>
-            <div>
-                <ul class="nav-items">
-                    <li>
-                        <a class="nav-item" aria-current="page" href="#history">01. HISTORY</a>
-                    </li>
-                    <li>
-                        <a class="nav-item" aria-current="page" href="#team">02. TEAM</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </header>
+    <div class="container-fluid">
+        <!-- Section 1 -->
+        <section class="section-1">
+          <a href="#" class="logo">
+            <img src="/images/logo.png" alt="mountain logo">
+          </a>
+          <nav class="navbar">
+            <a href="#first-section" class="navbar-link"><strong><em>01. History</em></strong></a>
+            <a href="#climb-section" class="navbar-link"><strong><em>02. Team</em></strong></a>
+          </nav>
+        </section>
+        <!-- End of Section 1 -->
 
     <!--History-->
     <div id="history" class="history-background">
@@ -98,16 +92,11 @@
         </div>
         <!--create a toggle where displays mountain 1, but switches to mountain 2 once clicked-->
         <div class="mountain-btn-section">
-            <ul class="buttons">
-                <li>
-                    <a>MOUNTAIN 1</a>
-                </li>
-                <li>
-                    <a>MOUNTAIN 2</a>
-                </li>
-            </ul>
+            <button id="toggleButton1">MOUNTAIN 1</button>
+            <button id="toggleButton2">MOUNTAIN 2</button>
         </div>
         <div id="mountain-schedule">
+            <img id="image" class="buttons" src="./images/bottom_image.png" alt="Image 1">
         </div>
     </div>
 
